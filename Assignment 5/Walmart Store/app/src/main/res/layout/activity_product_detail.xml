@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:maxHeight="400dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageView"
+            android:src="@drawable/rga_voyager"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text='RGA Voyager 7" 16GB Android Tablet'
+                android:id="@+id/title"
+                android:layout_marginBottom="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='Color: Black'
+                android:id="@+id/color"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Walmart #: 555948101"
+                android:textStyle="bold"
+                android:id="@+id/product_id"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Description :"
+                android:layout_marginBottom="10dp"/>
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/product_description"
+                android:text=" Introducing the RGA Voyager 7-inch Google Certified Tablet. Operating on Android's sweetest operating system yet, Android 6.0 (Marshmallow), you can enjoy more of what the Google Play store has to offer." />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
