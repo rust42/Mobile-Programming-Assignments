@@ -19,7 +19,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:label="@string/title_activity_login"
+            android:label="My CV"
             android:theme="@style/Theme.CVBuilder.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
