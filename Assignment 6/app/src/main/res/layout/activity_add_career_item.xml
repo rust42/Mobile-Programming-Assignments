@@ -38,49 +38,51 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title"
+                android:text="@string/add_item_title"
                 android:textStyle="bold"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:layout_marginBottom="20dp"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Title"
+                android:hint="@string/title"
                 android:textSize="20sp"
-                android:textColor="#eeeeee"
+                android:textColor="@color/material_dynamic_primary30"
                 android:id="@+id/title_field"
                 android:background="@drawable/text_view_border"
                 android:padding="10dp"
                 android:layout_marginBottom="30dp"
-                />
+                android:autofillHints="name"
+                android:inputType="text" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Details"
+                android:text="@string/details"
                 android:textStyle="bold"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:layout_marginBottom="20dp"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:id="@+id/details_field"
-                android:textColor="#eeeeee"
-                android:hint="Add details here"
+                android:textColor="@color/material_dynamic_primary30"
+                android:hint="@string/add_details_here"
                 android:gravity="top"
                 android:padding="10dp"
                 android:background="@drawable/text_view_border"
                 android:textSize="20sp"
                 android:layout_marginBottom="40dp"
-                />
+                android:autofillHints="name"
+                android:inputType="textMultiLine" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Add"
+                android:text="@string/add"
                 android:id="@+id/add_button"
                 android:paddingVertical="4dp"
                 android:layout_margin="10dp"

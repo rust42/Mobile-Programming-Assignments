@@ -36,4 +36,9 @@
     <string name="user_example_com">user@example.com</string>
     <string name="secret">secret</string>
     <string name="login">Login</string>
+    <string name="add">Add</string>
+    <string name="details">Details</string>
+    <string name="add_details_here">Add details here</string>
+    <string name="title">Title</string>
+    <string name="add_item_title">Title</string>
 </resources>
