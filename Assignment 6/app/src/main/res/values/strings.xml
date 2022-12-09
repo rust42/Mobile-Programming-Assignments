@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My CV</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_career_item">AddCareerItem</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="contact_list_image">List image</string>
+    <string name="github_link">https://github.com/rust42</string>
+    <string name="github_title">Github</string>
+    <string name="maharishi_international_university">Maharishi International University</string>
+    <string name="master_of_science_in_computer_science">Master of Science in Computer Science</string>
+    <string name="university_of_eastern_finland">University of Eastern Finland</string>
+    <string name="impit_degree">International Masters Program in Information Technology</string>
+    <string name="everest_engineering_college">Everest Engineering College</string>
+    <string name="bachelor_degree_name">Bachelor of Engineering in Electronics and Communication</string>
+    <string name="college_image">College image</string>
+    <string name="eec_image">EEC Image</string>
+    <string name="uef_image">UEF Image</string>
+    <string name="about_me">About me</string>
+    <string name="about_me_skill">Skilled iOS Engineer with 10+ years of experience developing high-quality apps. Leverages hands-on knowledge of core iOS frameworks and technologies, including Objective C and Swift. Familiar with frontend frameworks such as React and Spring backend development.</string>
+    <string name="add_a_new_item_button">Add a new item button</string>
+    <string name="mobile_software_engineer">Mobile Software Engineer</string>
+    <string name="sandeep_koirala">Sandeep Koirala</string>
+    <string name="work_history_company_logo">Work history company logo</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="secret">secret</string>
+    <string name="login">Login</string>
+</resources>

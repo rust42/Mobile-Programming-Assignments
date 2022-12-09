@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:icon="@drawable/telegram_icon"
+        android:title="Telegram"
+        app:showAsAction="always"
+        android:id="@+id/telegram_menu_item"
+        />
+    <item android:icon="@drawable/linkedin_icon_color"
+        android:title="Linkedin"
+        app:showAsAction="always"
+        android:id="@+id/linkedin_menu_item"
+        />
+    <item android:title="Whatsapp"
+        android:id="@+id/whatsapp_menu_item"
+        />
+    <item android:title="Gmail"
+        android:id="@+id/gmail_menu_item"
+        />
+
+</menu>
