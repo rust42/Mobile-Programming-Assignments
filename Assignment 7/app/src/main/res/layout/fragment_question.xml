@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/question_fragment_background"
+    tools:context=".QuestionFragment"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Which of the following is the built-in database of Android?"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/question_text"
+        android:paddingHorizontal="20dp"
+        android:textAlignment="center" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/question_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/questions_radio_group"
+        >
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SQLite"
+            android:button="@null"
+            style="@style/RadioButtonStyle"
+            android:id="@+id/answer_1"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MySQL"
+            style="@style/RadioButtonStyle"
+            android:button="@null"
+            android:id="@+id/answer_2"
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oracle"
+            style="@style/RadioButtonStyle"
+            android:button="@null"
+            android:id="@+id/answer_3"
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="None of the above"
+            style="@style/RadioButtonStyle"
+            android:button="@null"
+            android:id="@+id/answer_4"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/questions_radio_group"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Submit"
+        android:id="@+id/submit_button"
+        android:background="@drawable/question_fragment_background"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
