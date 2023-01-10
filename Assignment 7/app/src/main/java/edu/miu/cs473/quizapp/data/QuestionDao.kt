@@ -1,12 +1,12 @@
-package edu.miu.cs473.quizapp
+package edu.miu.cs473.quizapp.data
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Transaction
-import edu.miu.cs473.quizapp.entity.Answer
-import edu.miu.cs473.quizapp.entity.Question
-import edu.miu.cs473.quizapp.entity.QuestionAnswers
+import edu.miu.cs473.quizapp.data.Answer
+import edu.miu.cs473.quizapp.data.Question
+import edu.miu.cs473.quizapp.data.QuestionAnswers
 
 @Dao
 interface QuestionDao {

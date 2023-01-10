@@ -1,7 +1,8 @@
-package edu.miu.cs473.quizapp
+package edu.miu.cs473.quizapp.data
 
-import edu.miu.cs473.quizapp.entity.Question
-import edu.miu.cs473.quizapp.entity.QuestionAnswers
+import edu.miu.cs473.quizapp.data.AppDatabase
+import edu.miu.cs473.quizapp.data.Question
+import edu.miu.cs473.quizapp.data.QuestionAnswers
 
 class QuestionsRepository(private val database: AppDatabase) {
 

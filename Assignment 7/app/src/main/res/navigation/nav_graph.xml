@@ -6,12 +6,12 @@
     app:startDestination="@id/QuestionFragment">
     <activity
         android:id="@+id/OnboardingActivity"
-        android:name="edu.miu.cs473.quizapp.OnboardingActivity"
+        android:name="edu.miu.cs473.quizapp.ui.OnboardingActivity"
         tools:layout="@layout/activity_onboarding">
     </activity>
     <fragment
         android:id="@+id/QuestionFragment"
-        android:name="edu.miu.cs473.quizapp.QuestionFragment"
+        android:name="edu.miu.cs473.quizapp.ui.QuestionFragment"
         android:label="Questions"
         tools:layout="@layout/fragment_question">
         <action

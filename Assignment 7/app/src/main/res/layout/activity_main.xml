@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#008cff"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-    <com.google.android.material.appbar.AppBarLayout
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.QuestionContainerActivity">
+<com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,12 +32,12 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Question 3 / 10"
-        android:textSize="20dp"
+        tools:text="Question 3 / 10"
+        android:textSize="20sp"
         android:id="@+id/question_number"
         android:textColor="@color/white" />
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_content_main"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
@@ -56,8 +58,9 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="4 right, 3 wrong"
-        android:textSize="20dp"
+        tools:text="4 right, 3 wrong"
+        android:textStyle="bold"
+        android:textSize="25sp"
         android:id="@+id/statusTextView"
         android:textColor="@color/white" />
 

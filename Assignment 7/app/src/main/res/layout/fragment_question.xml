@@ -5,19 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/question_fragment_background"
-    tools:context=".QuestionFragment"
+    tools:context=".ui.QuestionFragment"
     android:paddingTop="40dp"
     android:paddingBottom="40dp"
-
-
     >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Which of the following is the built-in database of Android?"
-        android:textSize="24dp"
+        tools:text="Which of the following is the built-in database of Android?"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:id="@+id/question_text"
@@ -36,7 +34,7 @@
         <androidx.appcompat.widget.AppCompatRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SQLite"
+            tools:text="SQLite"
             android:button="@null"
             style="@style/RadioButtonStyle"
             android:id="@+id/answer_1"
@@ -45,7 +43,7 @@
         <androidx.appcompat.widget.AppCompatRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MySQL"
+            tools:text="MySQL"
             style="@style/RadioButtonStyle"
             android:button="@null"
             android:id="@+id/answer_2"
@@ -53,7 +51,7 @@
         <androidx.appcompat.widget.AppCompatRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Oracle"
+            tools:text="Oracle"
             style="@style/RadioButtonStyle"
             android:button="@null"
             android:id="@+id/answer_3"
@@ -61,7 +59,7 @@
         <androidx.appcompat.widget.AppCompatRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="None of the above"
+            tools:text="None of the above"
             style="@style/RadioButtonStyle"
             android:button="@null"
             android:id="@+id/answer_4"
@@ -75,11 +73,12 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="30dp"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Submit"
+        android:text="@string/submit_button"
         android:id="@+id/submit_button"
-        android:background="@drawable/question_fragment_background"
+        app:backgroundTint="@null"
+        android:background="@drawable/submit_button_state"
         />
 
 

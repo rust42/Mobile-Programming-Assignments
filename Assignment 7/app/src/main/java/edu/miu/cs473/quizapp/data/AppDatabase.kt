@@ -1,12 +1,12 @@
-package edu.miu.cs473.quizapp
+package edu.miu.cs473.quizapp.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import edu.miu.cs473.quizapp.entity.Answer
-import edu.miu.cs473.quizapp.entity.Question
+import edu.miu.cs473.quizapp.ioThread
+import edu.miu.cs473.quizapp.seedQuestions
 
 @Database(entities = [Question::class, Answer::class], version = 1, exportSchema = false)
 abstract class AppDatabase: RoomDatabase() {

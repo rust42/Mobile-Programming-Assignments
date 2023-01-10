@@ -1,4 +1,4 @@
-package edu.miu.cs473.quizapp
+package edu.miu.cs473.quizapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,15 +7,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
+import edu.miu.cs473.quizapp.QuestionReviewBuilder
+import edu.miu.cs473.quizapp.R
 import edu.miu.cs473.quizapp.databinding.FragmentQuestionBinding
-import edu.miu.cs473.quizapp.QuestionViewModel.Answer
+import edu.miu.cs473.quizapp.viewmodel.QuestionViewModel.AnswerAlphabet
+import edu.miu.cs473.quizapp.data.AppDatabase
+import edu.miu.cs473.quizapp.data.QuestionsRepository
+import edu.miu.cs473.quizapp.viewmodel.QuestionViewModel
+import java.lang.IllegalStateException
 
 class QuestionFragment : Fragment() {
     private var _binding: FragmentQuestionBinding? = null
     private val binding get() = _binding!!
 
     private val viewModel: QuestionViewModel by activityViewModels() {
-        QuestionViewModel.Factory(QuestionsRepository(AppDatabase.getInstance(requireActivity().application)))
+        QuestionViewModel.Factory(
+            QuestionReviewBuilder(requireActivity().applicationContext),
+            QuestionsRepository(
+                AppDatabase.getInstance(requireActivity().applicationContext)
+            )
+        )
     }
 
     override fun onCreateView(
@@ -31,7 +42,7 @@ class QuestionFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.submitButton.isEnabled = false
 
-        binding.questionsRadioGroup.setOnCheckedChangeListener { group, checkedId ->
+        binding.questionsRadioGroup.setOnCheckedChangeListener { _, checkedId ->
             binding.submitButton.isEnabled = checkedId != -1
         }
 
@@ -46,11 +57,11 @@ class QuestionFragment : Fragment() {
         }
         binding.submitButton.setOnClickListener {
             val answer = when (binding.questionsRadioGroup.checkedRadioButtonId) {
-                binding.answer1.id -> Answer.A
-                binding.answer2.id -> Answer.B
-                binding.answer3.id -> Answer.C
-                binding.answer4.id -> Answer.D
-                else -> Answer.A
+                binding.answer1.id -> AnswerAlphabet.A
+                binding.answer2.id -> AnswerAlphabet.B
+                binding.answer3.id -> AnswerAlphabet.C
+                binding.answer4.id -> AnswerAlphabet.D
+                else -> throw IllegalStateException("Invalid radio button selected")
             }
             viewModel.submitAnswer(answer)
             viewModel.switchToNext()

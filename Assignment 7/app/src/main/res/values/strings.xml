@@ -49,4 +49,11 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_quiz_review">QuizReview</string>
+    <string name="onboarding_session_detail">The quiz session comprises of 20 questions and the session can be completed in 20 minutes</string>
+    <string name="onboarding_start_button_title">Start</string>
+    <string name="onboarding_title">Android Quiz</string>
+    <string name="onboarding_image">Idea image</string>
+    <string name="submit_button">Submit</string>
+    <string name="try_again_nav_button">Try again</string>
 </resources>

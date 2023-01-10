@@ -13,7 +13,16 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".ui.QuizReviewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_quiz_review"
+            android:theme="@style/Theme.QuizApp.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.OnboardingActivity"
             android:exported="true"
             android:label="@string/title_activity_onboarding"
             android:theme="@style/Theme.QuizApp">
@@ -23,21 +32,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".QuestionContainerActivity"
+            android:name=".ui.QuestionContainerActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.QuizApp.NoActionBar">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
 
             <meta-data
                 android:name="android.app.lib_name"

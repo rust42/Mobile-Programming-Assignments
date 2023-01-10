@@ -1,10 +1,12 @@
 package edu.miu.cs473.quizapp
 
-import edu.miu.cs473.quizapp.entity.Answer
-import edu.miu.cs473.quizapp.entity.Question
+import edu.miu.cs473.quizapp.data.Answer
+import edu.miu.cs473.quizapp.data.Question
+import edu.miu.cs473.quizapp.data.QuestionDao
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 
+@OptIn(DelicateCoroutinesApi::class)
 fun seedQuestions(dao: QuestionDao) {
     GlobalScope.run {
         var question = Question(1, text = "Which of the following is the built-in database of Android?")
