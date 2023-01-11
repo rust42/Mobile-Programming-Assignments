@@ -1,13 +1,16 @@
 package edu.miu.cs473.quizapp.data
 
+import android.os.Build
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.annotation.RequiresApi
 
 data class QuestionAnswersPair(val questionAnswers: QuestionAnswers, val providedAnswer: Answer):
     Parcelable {
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     constructor(parcel: Parcel) : this(
-        parcel.readParcelable(QuestionAnswers::class.java.classLoader)!!,
-        parcel.readParcelable(Answer::class.java.classLoader)!!
+        parcel.readParcelable(QuestionAnswers::class.java.classLoader, QuestionAnswers::class.java)!!,
+        parcel.readParcelable(Answer::class.java.classLoader, Answer::class.java)!!
     ) {
     }
 
@@ -21,6 +24,7 @@ data class QuestionAnswersPair(val questionAnswers: QuestionAnswers, val provide
     }
 
     companion object CREATOR : Parcelable.Creator<QuestionAnswersPair> {
+        @RequiresApi(Build.VERSION_CODES.TIRAMISU)
         override fun createFromParcel(parcel: Parcel): QuestionAnswersPair {
             return QuestionAnswersPair(parcel)
         }
