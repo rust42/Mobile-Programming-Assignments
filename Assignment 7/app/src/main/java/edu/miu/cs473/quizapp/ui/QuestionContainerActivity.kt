@@ -13,13 +13,13 @@ import edu.miu.cs473.quizapp.QuestionReviewBuilder
 import edu.miu.cs473.quizapp.R
 import edu.miu.cs473.quizapp.data.AppDatabase
 import edu.miu.cs473.quizapp.data.QuestionsRepository
-import edu.miu.cs473.quizapp.databinding.ActivityMainBinding
+import edu.miu.cs473.quizapp.databinding.ActivityQuizContainerBinding
 import edu.miu.cs473.quizapp.viewmodel.QuestionViewModel
 
 class QuestionContainerActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityQuizContainerBinding
 
     private val viewModel: QuestionViewModel by viewModels {
         QuestionViewModel.Factory(
@@ -33,7 +33,7 @@ class QuestionContainerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityQuizContainerBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         viewModel.currentQuestionOffsetText.observe(this) {

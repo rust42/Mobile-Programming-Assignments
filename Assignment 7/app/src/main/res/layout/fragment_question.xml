@@ -17,7 +17,7 @@
         tools:text="Which of the following is the built-in database of Android?"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:id="@+id/question_text"
         android:paddingHorizontal="20dp"
         android:textAlignment="center" />

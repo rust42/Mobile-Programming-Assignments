@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="#008cff"
     tools:context=".ui.OnboardingActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -36,7 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:text="@string/onboarding_title"
         android:id="@+id/title_view"
@@ -55,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@id/title_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/white"
+        app:tint="@color/black"
         android:id="@+id/idea_bulb"
         android:contentDescription="@string/onboarding_image"
         />
@@ -69,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@id/idea_bulb"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:text="@string/onboarding_session_detail" />
 
     <Button
@@ -82,7 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:backgroundTint="@null"
-        android:background="@drawable/button_state"
+        android:background="@drawable/submit_button_state"
 
         android:layout_marginBottom="60dp"
         android:id="@+id/start_button"

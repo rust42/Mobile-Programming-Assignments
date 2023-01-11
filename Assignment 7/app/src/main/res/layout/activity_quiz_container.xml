@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#008cff"
+    android:background="#ffffff"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.QuestionContainerActivity">
 <com.google.android.material.appbar.AppBarLayout
@@ -35,7 +35,7 @@
         tools:text="Question 3 / 10"
         android:textSize="20sp"
         android:id="@+id/question_number"
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_content_main"
@@ -62,6 +62,6 @@
         android:textStyle="bold"
         android:textSize="25sp"
         android:id="@+id/statusTextView"
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
